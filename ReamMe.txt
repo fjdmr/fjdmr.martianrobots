@@ -1,0 +1,13 @@
+The are two options to execute the project, the CLI app fjdmr.martianrobots.cli.dll and the API fjdmr.martianrobots.api.dll.
+
+To run the CLI execute the project and follow the instructions in the console.
+
+To run the API do an HTTPPOST request to  /martianrobots with a Json body similar to the following example:
+
+{
+    "WorldX": 5,
+    "WorldY": 3,
+    "Robots":[{"X": 1, "Y": 1, "Direction": "E", "Instructions": "RFRFRFRF"},
+    {"X": 3, "Y": 2, "Direction": "N", "Instructions": "FRRFLLFFRRFLL"},
+    {"X": 0, "Y": 3, "Direction": "W", "Instructions": "LLFFFRFLFL"}]
+}
